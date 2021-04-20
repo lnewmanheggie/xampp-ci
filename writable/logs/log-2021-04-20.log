@@ -1,0 +1,8 @@
+ERROR - 2021-04-20 13:31:11 --> Error connecting to the database: No such file or directory
+ERROR - 2021-04-20 13:32:23 --> Error connecting to the database: No such file or directory
+ERROR - 2021-04-20 13:34:54 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-04-20 13:37:08 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-04-20 13:44:29 --> Error connecting to the database: No such file or directory
+ERROR - 2021-04-20 13:53:20 --> Error connecting to the database: No such file or directory

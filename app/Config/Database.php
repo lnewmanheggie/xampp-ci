@@ -32,10 +32,10 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => '',
-		'password' => '',
-		'database' => '',
+		'hostname' => '127.0.0.1',
+		'username' => 'root',
+		'password' => 'root',
+		'database' => 'ci4',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -49,7 +49,6 @@ class Database extends Config
 		'failover' => [],
 		'port'     => 3306,
 	];
-
 	/**
 	 * This database connection is used when
 	 * running PHPUnit database tests.

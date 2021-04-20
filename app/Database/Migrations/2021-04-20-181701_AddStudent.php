@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class AddUser extends Migration
+class AddStudent extends Migration
 {
 	public function up()
 	{
@@ -28,12 +28,12 @@ class AddUser extends Migration
 			'email' => [
 				'type' => 'VARCHAR',
 				'constraint' => '100',
-				'null' => false,
+				'null' => true,
 				'unique' => true,
 			],
-			'password' => [
-				'type' => 'VARCHAR',
-				'constraint' => '255',
+			'grade' => [
+				'type' => 'INT',
+				'constraint' => 2,
 				'null' => false,
 				'unique' => false,
 			],
@@ -44,11 +44,11 @@ class AddUser extends Migration
 			'created_at datetime default current_timestamp',
 		]);
 		$this->forge->addPrimaryKey('id');
-		$this->forge->createTable('user');
+		$this->forge->createTable('student');
 	}
 
 	public function down()
 	{
-		$this->forge->dropTable('user');
+		$this->forge->dropTable('student');
 	}
 }
