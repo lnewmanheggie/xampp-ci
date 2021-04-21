@@ -46,4 +46,11 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
 	}
+
+	// return JSON responses to client
+	public function getResponse(array $responseBody, int $code = ResponseInterface::HTTP_OK) {
+		return $this->response->setStatusCode($code)->setJSON($responseBody);
+	}
+
+	
 }

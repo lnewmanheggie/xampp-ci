@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use Exception;
 
 class StudentModel extends Model
 {
     protected $table = 'student';
+    protected $primaryKey = 'id';
     protected $allowedFields = [
         'first_name',
         'last_name',
@@ -15,16 +15,16 @@ class StudentModel extends Model
         'grade',
     ];
 
-    protected $updatedField = 'updated_at';
+    // protected $updatedField = 'updated_at';
 
-    public function findStudentById($id)
-    {
-        $student = $this->asArray()->where(['id' => $id])->first();
+    // public function findStudentById($id)
+    // {
+    //     $student = $this->asArray()->where(['id' => $id])->first();
 
-        if ($student) {
-            throw new Exception('No student with this id');
-        }
+    //     if ($student) {
+    //         throw new Exception('No student with this id');
+    //     }
 
-        return $student;
-    }
+    //     return $student;
+    // }
 }
