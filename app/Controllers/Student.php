@@ -47,4 +47,22 @@ class Student extends ResourceController
 
         return $this->respondCreated($response, 201);
     }
+
+    public function update($id = null) {
+        $model = new StudentModel();
+        $json = $this->request->getJSON();
+
+        $model->update($id, $json);
+        $response = [
+            'status' => 201,
+            'error' => null,
+            'messages' => [
+                'success' => 'Updated successfully'
+            ]
+        ];
+
+        return $this->respond($response, 201);
+    }
+
+
 }

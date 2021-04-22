@@ -6,3 +6,250 @@ CRITICAL - 2021-04-22 14:31:46 --> No student with this id
 #4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
 #5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
 #6 {main}
+CRITICAL - 2021-04-22 15:18:41 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:33:36 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 54)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:33:46 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 54)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:35:02 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 54)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+ERROR - 2021-04-22 15:38:22 --> mysqli_sql_exception: Duplicate entry 'lacey@gmail.com' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `student...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(353): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/BaseModel.php(901): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(737): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(72): CodeIgniter\Model->update('5', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#9 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#10 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2021-04-22 15:38:22 --> Duplicate entry 'lacey@gmail.com' for key 'email'
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `student...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(353): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/BaseModel.php(901): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(737): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(72): CodeIgniter\Model->update('5', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#9 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#10 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2021-04-22 15:41:33 --> Undefined array key "first_name"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:42:07 --> Undefined array key "last_name"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:42:15 --> Undefined array key "last_name"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:43:08 --> Undefined array key "last_name"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:43:17 --> Undefined array key "first_name"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:43:29 --> Undefined array key "first_name"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+ERROR - 2021-04-22 15:44:05 --> mysqli_sql_exception: Duplicate entry 'lacey@gmail.com' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `student...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(353): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/BaseModel.php(901): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(737): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(63): CodeIgniter\Model->update('5', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#9 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#10 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2021-04-22 15:44:05 --> Duplicate entry 'lacey@gmail.com' for key 'email'
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `student...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(353): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/BaseModel.php(901): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(737): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(63): CodeIgniter\Model->update('5', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#9 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#10 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#13 {main}
+ERROR - 2021-04-22 15:44:15 --> mysqli_sql_exception: Duplicate entry 'lacey@gmail.com' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `student...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(353): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/BaseModel.php(901): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(737): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(63): CodeIgniter\Model->update('5', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#9 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#10 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2021-04-22 15:44:15 --> Duplicate entry 'lacey@gmail.com' for key 'email'
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `student...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(353): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/BaseModel.php(901): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Model.php(737): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(63): CodeIgniter\Model->update('5', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#9 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#10 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2021-04-22 15:44:22 --> Undefined property: stdClass::$email
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 58)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:45:52 --> Undefined property: stdClass::$email
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 57)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:53:52 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:54:10 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:54:43 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 56)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 15:58:14 --> syntax error, unexpected token "return"
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/X...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#8 {main}
+CRITICAL - 2021-04-22 15:59:50 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 77)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 16:00:36 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 77)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
+CRITICAL - 2021-04-22 16:00:48 --> Undefined property: stdClass::$first_name
+#0 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/app/Controllers/Student.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/X...', 77)
+#1 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(936): App\Controllers\Student->update('5')
+#2 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Commands/Server/rewrite.php(45): require_once('/Applications/X...')
+#6 {main}
