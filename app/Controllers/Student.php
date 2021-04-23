@@ -18,9 +18,9 @@ class Student extends ResourceController
 
     public function show($id = null) {
         $model = new StudentModel();
-        $data = $model->getWhere(['id' => $id])->getResult();
-        if ($data) {
-            return $this->respond($data, 200);
+        $student = $model->findStudentById($id);
+        if ($student) {
+            return $this->respond($student, 200);
         } else {
             return $this->failNotFound('No student found');
         }
@@ -53,6 +53,7 @@ class Student extends ResourceController
         $json = $this->request->getJSON();
 
         $model->update($id, $json);
+
         $response = [
             'status' => 201,
             'error' => null,
@@ -64,5 +65,24 @@ class Student extends ResourceController
         return $this->respond($response, 201);
     }
 
+    public function delete($id = null) {
+        $model = new StudentModel();
+        $student = $model->findStudentById($id);
+        
+        if ($student) {
+            $model->delete($student);
+            $response = [
+                'status'   => 200,
+                'error'    => null,
+                'messages' => [
+                    'success' => 'Data Deleted'
+                ]
+            ];
+             
+            return $this->respondDeleted($response);
+        } else {
+            return $this->failNotFound('No student found');
+        }
+    }
 
 }

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use Exception;
 
 class StudentModel extends Model
 {
@@ -15,7 +16,17 @@ class StudentModel extends Model
         'grade',
     ];
 
-    // protected $updatedField = 'updated_at';
+    protected $createdField = 'created_at';
+    protected $updatedField = 'updated_at';
 
+    public function findStudentById($id) {
+        $student = $this->asArray()->where(['id' => $id])->first();
+
+        if (!$student) {
+            throw new Exception('Could not find student for that ID');
+        }
+
+        return $student;
+    }
     
 }
