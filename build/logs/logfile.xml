@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.020780">
+    <testsuite name="App" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.020780">
+      <testsuite name="CodeIgniter\TestStudentController" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/SampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.020780">
+        <testcase name="testTrueAssertsToTrue" class="CodeIgniter\TestStudentController" classname="CodeIgniter.TestStudentController" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/SampleTest.php" line="11" assertions="1" time="0.020780"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
