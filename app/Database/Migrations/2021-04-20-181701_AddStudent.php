@@ -31,6 +31,12 @@ class AddStudent extends Migration
 				'null' => true,
 				'unique' => true,
 			],
+            'password' => [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+                'null' => false,
+                'unique' => false,
+            ],
 			'grade' => [
 				'type' => 'INT',
 				'constraint' => 2,

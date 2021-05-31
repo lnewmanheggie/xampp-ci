@@ -1,3 +1,8 @@
+Database (App\Database\Database)
+ [x] See in user db
+ [x] Can insert row in user db
+ [x] Can grab user
+
 Student Controller (CodeIgniter\StudentController)
  [x] True asserts to true
 

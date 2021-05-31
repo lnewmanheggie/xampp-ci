@@ -1,88 +1,39 @@
-<?php 
+<?php
 
 namespace App\Controllers;
 
-use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
 use App\Models\StudentModel;
+use CodeIgniter\Controller;
 
-class Student extends ResourceController
+class Student extends Controller
 {
-    use ResponseTrait;
-
-    public function index() {
+    public function index()
+    {
         $model = new StudentModel();
-        $data = $model->findAll();
-        return $this->respond($data, 200);
-    }
 
-    public function show($id = null) {
-        $model = new StudentModel();
-        $student = $model->findStudentById($id);
-        if ($student) {
-            return $this->respond($student, 200);
-        } else {
-            return $this->failNotFound('No student found');
-        }
-    }
-
-    public function create() {
-        $model = new StudentModel();
         $data = [
-            'first_name' => $this->request->getPost('first_name'),
-            'last_name' => $this->request->getPost('last_name'),
-            'email' => $this->request->getPost('email'),
-            'grade' => $this->request->getPost('grade'),
-        ];
-        $data = json_decode(file_get_contents("php://input"));
-
-        $model->insert($data);
-        $response = [
-            'status' => 201,
-            'error' => null,
-            'messages' => [
-                'success' => 'Data Saved'
-            ]
+            'student'  => $model->getStudent(),
+            'title' => 'All students',
         ];
 
-        return $this->respondCreated($response, 201);
+        echo view('templates/header', $data);
+        echo view('students/viewall', $data);
+        echo view('templates/footer', $data);
     }
 
-    public function update($id = null) {
+    public function view($id = null)
+    {
         $model = new StudentModel();
-        $json = $this->request->getJSON();
 
-        $model->update($id, $json);
-
-        $response = [
-            'status' => 201,
-            'error' => null,
-            'messages' => [
-                'success' => 'Updated successfully'
-            ]
-        ];
-
-        return $this->respond($response, 201);
-    }
-
-    public function delete($id = null) {
-        $model = new StudentModel();
-        $student = $model->findStudentById($id);
-        
-        if ($student) {
-            $model->delete($student);
-            $response = [
-                'status'   => 200,
-                'error'    => null,
-                'messages' => [
-                    'success' => 'Data Deleted'
-                ]
-            ];
-             
-            return $this->respondDeleted($response);
-        } else {
-            return $this->failNotFound('No student found');
+        $data['student'] = $model->getStudent($id);
+    
+        if (empty($data['student']))
+        {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find student: '. $id);
         }
-    }
 
+        echo view('templates/header', $data);
+        echo view('students/viewone', $data);
+        echo view('templates/footer', $data);
+    }
 }

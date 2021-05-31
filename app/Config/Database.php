@@ -24,6 +24,7 @@ class Database extends Config
 	 * @var string
 	 */
 	public $defaultGroup = 'default';
+	// 'default'
 
 	/**
 	 * The default database connection.
@@ -35,7 +36,7 @@ class Database extends Config
 		'hostname' => '127.0.0.1',
 		'username' => 'root',
 		'password' => 'root',
-		'database' => 'ci4',
+		'database' => 'ci4_new',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -58,11 +59,11 @@ class Database extends Config
 	public $tests = [
 		'DSN'      => '',
 		'hostname' => '127.0.0.1',
-		'username' => '',
-		'password' => '',
-		'database' => ':memory:',
-		'DBDriver' => 'SQLite3',
-		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
+		'username' => 'root',
+		'password' => 'root',
+		'database' => 'test',
+		'DBDriver' => 'MySQLi',
+		'DBPrefix' => '',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
 		'charset'  => 'utf8',
