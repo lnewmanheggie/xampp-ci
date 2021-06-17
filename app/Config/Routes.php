@@ -33,11 +33,15 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-
+// Home route
 $routes->get('/', 'Home::index');
-$routes->get('students/(:segment)', 'Student::view/$1');
+$routes->get('(:any)', 'Pages::view/$1'); // page routing -> /about, /home, etc -> anything in pages directory
+
+// get all students -> /students
 $routes->get('students', 'Student::index');
-$routes->get('(:any)', 'Pages::view/$1');
+// get one student -> /students/2
+$routes->get('students/(:num)', 'Student::view/$1');
+
 
 
 /*
