@@ -4,5 +4,5 @@ Database (App\Database\Database)
  [x] Can grab user
 
 Student Controller (CodeIgniter\StudentController)
- [x] True asserts to true
+ [ ] View student
 

@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.033228">
-    <testsuite name="App" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.033228">
-      <testsuite name="App\Database\DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.030003">
-        <testcase name="testSeeInUserDb" class="App\Database\DatabaseTest" classname="App.Database.DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" line="19" assertions="1" time="0.024455"/>
-        <testcase name="testCanInsertRowInUserDb" class="App\Database\DatabaseTest" classname="App.Database.DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" line="28" assertions="1" time="0.004481"/>
-        <testcase name="testCanGrabUser" class="App\Database\DatabaseTest" classname="App.Database.DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" line="38" assertions="1" time="0.001068"/>
+  <testsuite name="" tests="4" assertions="3" errors="1" warnings="0" failures="0" skipped="0" time="0.044133">
+    <testsuite name="App" tests="4" assertions="3" errors="1" warnings="0" failures="0" skipped="0" time="0.044133">
+      <testsuite name="App\Database\DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.030962">
+        <testcase name="testSeeInUserDb" class="App\Database\DatabaseTest" classname="App.Database.DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" line="19" assertions="1" time="0.024638"/>
+        <testcase name="testCanInsertRowInUserDb" class="App\Database\DatabaseTest" classname="App.Database.DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" line="28" assertions="1" time="0.005481"/>
+        <testcase name="testCanGrabUser" class="App\Database\DatabaseTest" classname="App.Database.DatabaseTest" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/App/Database/DatabaseTest.php" line="38" assertions="1" time="0.000842"/>
       </testsuite>
-      <testsuite name="CodeIgniter\TestStudentController" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/SampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.003224">
-        <testcase name="testTrueAssertsToTrue" class="CodeIgniter\TestStudentController" classname="CodeIgniter.TestStudentController" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/SampleTest.php" line="11" assertions="1" time="0.003224"/>
+      <testsuite name="CodeIgniter\TestStudentController" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/StudentControllerTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.013171">
+        <testcase name="testViewStudent" class="CodeIgniter\TestStudentController" classname="CodeIgniter.TestStudentController" file="/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/StudentControllerTest.php" line="11" assertions="0" time="0.013171">
+          <error type="CodeIgniter\HTTP\Exceptions\HTTPException">CodeIgniter\TestStudentController::testViewStudent
+CodeIgniter\HTTP\Exceptions\HTTPException: 1146 is not a valid HTTP return status code
+
+/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/HTTP/ResponseTrait.php:126
+/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/system/Test/ControllerTester.php:167
+/Applications/XAMPP/xamppfiles/htdocs/xampp-ci/tests/unit/StudentControllerTest.php:15</error>
+        </testcase>
       </testsuite>
     </testsuite>
   </testsuite>
